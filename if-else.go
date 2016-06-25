@@ -9,7 +9,11 @@ func test(x, y int) int {
     return x2
   } else {
     fmt.Println("x2 < y")
+    fmt.Println(x2)
   }
+
+  // if-else.go:15: undefined: x2
+  // fmt.Println(x2)
 
   return y
 }
