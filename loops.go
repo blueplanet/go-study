@@ -7,9 +7,14 @@ import (
 
 func Sqrt(x float64) float64 {
   z := 1.0
+  last := z
+  limit := x
 
-  for i := 0; i < 10; i++ {
+  for limit > 0.00000000000000001 {
     z = z - ( z * z - x) / ( 2 * z)
+
+    limit = math.Abs(last - z)
+    last = z
   }
 
   return z
