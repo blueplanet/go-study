@@ -8,5 +8,8 @@ type Vertex struct {
 }
 
 func main() {
-  fmt.Println(Vertex{"gyo", 36})
+  v := Vertex{"gyo", 36}
+  v.Name = "Yu"
+  v.Age = 35
+  fmt.Println(v)
 }
