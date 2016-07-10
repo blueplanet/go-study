@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
-func main() {
-  m := make(map[string]string)
-  m["name"] = "gyo"
+var m = map[string]string{
+  "name": "gyo",
+}
 
+func main() {
   fmt.Println(m["name"])
 }
